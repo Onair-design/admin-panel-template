@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new Instructor</title>
+    <link rel="stylesheet" href="createins.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="logo (2).jpg" >
+    
+</head>
+<body>
+    <input type="checkbox" name="" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3 class="brand">
+              <span>OnAirDesign</span>
+            </h3>
+            <label for="sidebar-toggle" class="ti-menu-alt"></label>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="esas.html">
+                        <span class="ti-home"></span>
+                        <span> Home </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="instructor.html">
+                        <span ><i class="fas fa-chalkboard-teacher"></i></span>
+                        <span>Instructors <hr></span>
+                       
+                    </a>
+                </li>    <li>
+                    <a href="course.html">
+                        <span><i class="fab fa-leanpub"></i></span>
+                        <span>Courses</span>
+                    </a>
+                </li>    
+                <li>
+                    <a href="quiz.html">
+                        <span><i class="fas fa-tachometer-alt"></i></span>
+                        <span>Quiz</span>
+                    </a>
+                </li>    <li>
+                    <a href="blog.html">
+                        <span><i class="fab fa-blogger-b"></i></span>
+                        <span>Blog</span>
+                    </a>
+                </li>    <li>
+                    <a href="instructor-muracietleri.html">
+                        <span><i class="fas fa-comment-alt"></i></span>
+                        <span>Instructor müraciətləri</span>
+                    </a>
+                </li>   
+                 <li>
+                    <a href="Feedback.html">
+                        <span><i class="fas fa-comments"></i></span>
+                        <span>Feedback</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ödəniş-müraciətləri.html">
+                        <span><i class="fas fa-comments-dollar"></i></span>
+                        <span>Ödəniş müraciətləri</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="əlavələr.html">
+                        <span><i class="fas fa-plus-circle"></i></span>
+                        <span>Əlavələr</span>
+                    </a>
+                </li>
+             
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+        <header>
+            <div class="social-icons">
+               <span class="search-wrapper"><img width="110px" height="25px" src="photo5217594862264758665.jpg" alt=""></span>
+                <div></div>
+            </div>
+        </header>
+
+        <section class="recent">
+            <div class="activity-grid">
+               <div class="activity-card">
+                <div class="form">
+                    <div class="button2">
+                       <a class="create" href="instructor.html">
+                         <i class="fas fa-arrow-left"></i>
+                       </a>
+                    </div>
+                      
+                    <div class="wrapper">
+                        <div class="tittle"> Create New Instructor</div>
+                        <div class="form">
+                            <div class="input_field1 ">
+                                <label for="">
+                                    <i class="far fa-user"></i>
+                                </label>
+                                <input placeholder="Full Name" type="text" class="input" >
+                                <label class="right" for="">
+                                    <i class="far fa-envelope"></i>
+                                </label>
+                                <input type="text" placeholder="Email" class="input">
+                            </div>
+                           
+                           
+                           <div class="input_field1  password">
+                               <label for="">
+                                   <i class="fas fa-lock"></i></label>
+                               <input type="password" placeholder="Password" id="password" class="input">
+                               <span>
+                                <i class="fas fa-eye" id="eye" onclick="toggle()" aria-hidden="true "></i>
+                               </span>
+                               <label class="right" for=""><i class="fas fa-lock"></i></label>
+                               <input type="password" placeholder="Confirm password"  id="password2" class="input">
+                               <span class="span2">
+                                <i class="fas fa-eye" id="eye" onclick="toggle2()" aria-hidden="true "></i>
+                                </span>
+                               
+                           </div> 
+                           
+                         
+                           
+                           <div class="input_field1  ">
+                               <label for=""><i class="fas fa-portrait"></i></label>
+                               <input type="text" placeholder="Profile pucture url" class="input">
+                               <label class="right" for=""><i class="fas fa-user-tie"></i></label>
+                               <input type="text" placeholder="Profession" class="input">
+                           </div> 
+                           
+                           <div class="input_field2">
+                               <label for=""><i class="fas fa-address-card"></i> </label> 
+                               <div class="text-area">
+                                    <div class="toolbar">
+                                        <div class="tool-list">
+                                            <li class="tool">
+                                               <button 
+                                               type="button"
+                                             
+                                               class="tool-btn"
+                                               data-command='justifyLeft'>
+                                               <i class="fas fa-align-left"></i>
+                                               </button>
+                                            </li>
+                                            <li class="tool">
+                                                <button 
+                                                type="button"
+                                                data-command='justifyCenter'
+                                                class="tool-btn">
+                                                <i class="fas fa-align-center"></i>
+                                                </button>
+                                            </li>
+                                            <li class="tool">
+                                                <button 
+                                                type="button"
+                                                data-command='bold'
+                                                class="tool-btn">
+                                                <i class="fas fa-bold"></i>
+                                                </button>
+                                            </li>
+                                            <li class="tool">
+                                                <button 
+                                                type="button"
+                                                data-command='italic'
+                                                class="tool-btn">
+                                                <i class="fas fa-italic"></i>
+                                                </button>
+                                            </li>
+                                            <li class="tool">
+                                                <button 
+                                                type="button"
+                                                data-command='underline'
+                                                class="tool-btn">
+                                                <i class="fas fa-underline"></i>
+                                                </button>
+                                            </li>
+                                            <li class="tool">
+                                                <button 
+                                                type="button"
+                                                data-command='InsertOrderedList'
+                                                class="tool-btn">
+                                                <i class="fas fa-list-ol"></i>
+                                                </button>
+                                            </li>
+                                            <li class="tool">
+                                                <button 
+                                                type="button"
+                                                data-command='InsertUnorderedList'
+                                                class="tool-btn">
+                                                <i class="fas fa-list-ul"></i>
+                                                </button>
+                                            </li>
+                                            <li class="tool">
+                                                <button 
+                                                type="button"
+                                                data-command='createlink'
+                                                class="tool-btn">
+                                                <i class="fas fa-link"></i>
+                                                </button>
+                                            </li>
+                                        </div>
+                                        <div contenteditable="true" id='output'></div>
+                      
+                                     </div>
+                                </div>
+                            </div> 
+                           
+                         
+                           <div class="social-media">
+                               <h3>
+                                   Social media
+                                </h3>
+                           </div>
+                           
+                          
+                           
+                           <div class="input_field3">
+                               <label for=""><i class="fab fa-instagram"></i></label>
+                               <input type="text" placeholder="Instagram page" class="input">
+                               <label for=""><i class="fab fa-youtube"></i></label>
+                               <input type="text" placeholder="Youtube channel" class="input">
+                           </div> 
+                           
+                        
+                           <div class="input_field3">
+                               <label for=""><i class="fab fa-linkedin-in"></i></label>
+                               <input type="text" placeholder="Linkedin page" class="input">
+                               <label for=""><i class="fab fa-twitter"></i></label>
+                               <input type="text" placeholder="Twitter page" class="input">
+                           </div> 
+                           
+                           
+                           
+                           <div class="input_field3">
+                               <label for=""><i class="fab fa-dribbble"></i></label>
+                               <input type="text" placeholder="Dribbble page" class="input">
+                               <label for=""><i class="fab fa-github"></i></label>
+                               <input type="text" placeholder="Github page" class="input">
+                           </div>
+            
+                           
+            
+                           <div class="input_field3">
+                            <label for=""><i class="fab fa-facebook-square"></i></label>
+                            <input type="text" placeholder="Facebook page" class="input">            
+                           </div>
+                           <div class="submit">
+                               <button>
+                                       Save
+                               </button>
+                           </div>
+                        </div>
+                    </div>
+            
+                  </div>
+               </div>
+    </div>
+
+    <script src="createins.js"></script>
+</body>
+
+</html>

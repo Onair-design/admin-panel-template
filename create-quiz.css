@@ -1,0 +1,271 @@
+:root{
+    --main-color: #027581 ;
+    --color-dark: #1d2231 ;
+    --text-grey:  #8390a2 ;
+}
+
+body{
+    height: 1500px;
+    background-color: #e2e2e2;
+}
+*{
+    
+    font-family: 'Poppins' , sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+#sidebar-toggle{
+    display: none;
+}
+
+
+.sidebar{
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: #104b73;
+    color:#fff;
+    overflow-y: auto;
+    transition: width 500ms;
+    
+}
+
+.sidebar-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0rem 1rem;
+}
+
+
+.sidebar-menu{
+    padding: 1.4rem;
+}
+
+.sidebar li{
+    margin-bottom: 1.2rem;
+}
+
+.sidebar a{
+    color: #fff;
+    font-size: .9rem;
+}
+
+
+
+
+.sidebar a span:last-child{
+    padding-left:.6rem;
+}
+#sidebar-toggle:checked ~ .sidebar {
+    width: 60px;
+}
+
+#sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
+#sidebar-toggle:checked ~ .sidebar li span:last-child{
+    display: none;
+
+}
+#sidebar-toggle:checked ~ .sidebar .sidebar-header  ,
+#sidebar-toggle:checked ~ .sidebar li{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#sidebar-toggle:checked ~ .main-content{
+    margin-left: 60px;
+}
+#sidebar-toggle:checked ~ .main-content header{
+    left: 60px;
+}
+
+.main-content{
+    position: relative;
+    margin-left: 260px;
+    transition: margin-left 500ms;
+    
+}
+
+header{
+    position: fixed;
+    left: 260px;
+    top: 0;
+    z-index: 100;
+    width: calc(100% - 240px);
+    background: #fff;
+    height: 60px;
+    display: flex;
+    padding: 0rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    transition: left 500ms;
+
+}
+
+.search-wrapper{
+    border: 0;
+    outline: 0;
+    padding: 0 65rem 0 0;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+}
+
+.social-icons span
+.social-icons div{
+    margin-left: 1.2rem;
+}
+
+.social-icons div{
+    height: 38px;
+    width: 38px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(photo5217594862264758728\ \(1\).jpg);
+    border-radius: 50%;
+}
+
+
+
+main{
+    margin-top: 60px;
+    background: #f1f5f9;
+    min-height: 90vh;
+    padding: 1rem  3rem;
+}
+
+
+
+
+.recent{
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.activity-grid{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-gap: 1.5rem;
+    padding: 1rem 2rem;
+}
+.activity-card,
+.summary-card{
+    width: 120%;
+    background: #e2e2e2;
+    border-radius: 7px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
+
+
+.tool-list{
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 2rem;
+    margin-top: 3rem;
+   
+}
+
+.tool-btn{
+    display: block;
+    border: none;
+    padding: 0.5rem;
+    font-size: 20px;
+}
+#output{
+    height: 170px;
+    outline: none;
+    width: 70%;
+    padding: 1rem;
+    margin-left: 2rem;
+    background-color: white;
+    overflow-y: scroll;
+}
+
+
+.title h2 a i{
+    float: right;
+    margin: 2rem;
+}
+.title h2{
+    margin: 2rem;
+}
+
+.input{
+    margin: 2rem;
+
+}
+.input input {
+    float: left;
+    display: inline-flex;
+    cursor: pointer;
+    margin-right: 15px;
+    box-sizing: border-box;
+
+    
+}
+.input label{
+    display: block;
+    padding: 12px 24px;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    outline: none;
+    width: 45%;
+    margin: 1rem;
+    margin-right: 30px;
+}
+
+
+.icon-plus i{
+    float: right;
+    margin-right: 9rem;
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.plus a i{
+    float: right;
+    margin-right: 1rem;
+    color: black;
+    margin-top: 0.5rem;
+}
+.fa-trash-alt{
+    margin-left: 5rem;
+}
+.fa-trash-alt{
+    float: right;
+    margin-right: 10px;
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+
+.title #quiz-input input{
+    margin: 2rem;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 12px 24px;
+    border: none;
+    outline: none;
+    width: 25%;
+}
